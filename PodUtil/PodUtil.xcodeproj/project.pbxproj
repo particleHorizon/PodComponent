@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0580AA7E262A905E0022A23B /* PodUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0580AA7D262A905E0022A23B /* PodUtil.m */; };
 		0580AA7F262A905E0022A23B /* PodUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0580AA7C262A905E0022A23B /* PodUtil.h */; };
+		0580AAAD262AA7300022A23B /* PodUtil2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0580AAAC262AA7300022A23B /* PodUtil2.m */; };
+		0580AAAE262AA7300022A23B /* PodUtil2.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0580AAAB262AA7300022A23B /* PodUtil2.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,16 +24,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0580AAA7262AA7300022A23B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				0580AAAE262AA7300022A23B /* PodUtil2.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0580AA79262A905E0022A23B /* libPodUtil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPodUtil.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0580AA7C262A905E0022A23B /* PodUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodUtil.h; sourceTree = "<group>"; };
 		0580AA7D262A905E0022A23B /* PodUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PodUtil.m; sourceTree = "<group>"; };
+		0580AAA9262AA7300022A23B /* libPodUtil2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPodUtil2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0580AAAB262AA7300022A23B /* PodUtil2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodUtil2.h; sourceTree = "<group>"; };
+		0580AAAC262AA7300022A23B /* PodUtil2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PodUtil2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0580AA76262A905E0022A23B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0580AAA6262AA7300022A23B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				0580AA7B262A905E0022A23B /* PodUtil */,
+				0580AAAA262AA7300022A23B /* PodUtil2 */,
 				0580AA7A262A905E0022A23B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				0580AA79262A905E0022A23B /* libPodUtil.a */,
+				0580AAA9262AA7300022A23B /* libPodUtil2.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +88,15 @@
 				0580AA7D262A905E0022A23B /* PodUtil.m */,
 			);
 			path = PodUtil;
+			sourceTree = "<group>";
+		};
+		0580AAAA262AA7300022A23B /* PodUtil2 */ = {
+			isa = PBXGroup;
+			children = (
+				0580AAAB262AA7300022A23B /* PodUtil2.h */,
+				0580AAAC262AA7300022A23B /* PodUtil2.m */,
+			);
+			path = PodUtil2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +119,23 @@
 			productReference = 0580AA79262A905E0022A23B /* libPodUtil.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		0580AAA8262AA7300022A23B /* PodUtil2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0580AAAF262AA7300022A23B /* Build configuration list for PBXNativeTarget "PodUtil2" */;
+			buildPhases = (
+				0580AAA5262AA7300022A23B /* Sources */,
+				0580AAA6262AA7300022A23B /* Frameworks */,
+				0580AAA7262AA7300022A23B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PodUtil2;
+			productName = PodUtil2;
+			productReference = 0580AAA9262AA7300022A23B /* libPodUtil2.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +145,9 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					0580AA78262A905E0022A23B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					0580AAA8262AA7300022A23B = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -113,6 +166,7 @@
 			projectRoot = "";
 			targets = (
 				0580AA78262A905E0022A23B /* PodUtil */,
+				0580AAA8262AA7300022A23B /* PodUtil2 */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +177,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0580AA7E262A905E0022A23B /* PodUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0580AAA5262AA7300022A23B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0580AAAD262AA7300022A23B /* PodUtil2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +325,28 @@
 			};
 			name = Release;
 		};
+		0580AAB0262AA7300022A23B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0580AAB1262AA7300022A23B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -280,6 +364,15 @@
 			buildConfigurations = (
 				0580AA83262A905E0022A23B /* Debug */,
 				0580AA84262A905E0022A23B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0580AAAF262AA7300022A23B /* Build configuration list for PBXNativeTarget "PodUtil2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0580AAB0262AA7300022A23B /* Debug */,
+				0580AAB1262AA7300022A23B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
